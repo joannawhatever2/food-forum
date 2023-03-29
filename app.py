@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 
 app = Flask(__name__)
-
+app.secret_key = "a secret key, oh my"
 
 @app.route('/')
 def home():
