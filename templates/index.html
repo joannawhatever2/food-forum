@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <p><strong>Choose a topic:</strong></p>
+    <ul id="nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/veggies">Vegetables</a></li>
+      <li><a href="/fruits">Fruits</a></li>
+      <li><a href="/cookies">Cookies</a></li>
+    </ul>
+    <hr />
+    <h1>Fresh Food Forum</h1>
+    {% block content %}
+    {% endblock %}
+    <hr />
+    <p><a href="/post">Add a new post!</a></p>
+  </body>
+<script src="../static/index.js"></script>
+</html>
