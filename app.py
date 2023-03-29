@@ -23,10 +23,4 @@ def fruits():
 def cookies():
   return render_template('cookies.html')
 
-#app.run(host='0.0.0.0', port=81)
-
-def main():
-    print("one two three")
-
-if __name__ == '__main__':
-    main()
+app.run(host='0.0.0.0', port=81)
