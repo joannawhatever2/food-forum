@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<h2>Add a post</h2>
+
+<div>
+  <label>Post title</label><br>
+  <input type="text" id="ptitle" />
+</div>
+<div>
+  <label>Topic</label><br>
+  <input type="text" id="ptopic" />
+</div>
+<div>
+  <label>Post content</label><br>
+  <textarea id="ptext"></textarea>
+</div>
+<div><button value="submit" onclick="send('/general')">Submit</button>
+
+{% endblock %}
